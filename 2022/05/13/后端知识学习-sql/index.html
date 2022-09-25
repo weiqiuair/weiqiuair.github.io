@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>后端知识学习-sql | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="简介数据库作为一种专门管理数据的软件而出现。应用程序不需要自己管理数据，而是通过数据库软件提供的接口来读写数据。关系数据库的关系模型是基于数学理论建立的。我们把域定义为一组具有相同数据类型的值的集合，给定一组域D1，D2，D3…Dn，它们的笛卡尔集定义为D1✖️D2…Dn。。。数据类型关系数据库支持的标准数据类型包括数值、字符串、时间等。SQLsql是结构化查询语言的缩写，用来访问和操作数据库系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="后端知识学习-sql">
+<meta property="og:url" content="http://example.com/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="简介数据库作为一种专门管理数据的软件而出现。应用程序不需要自己管理数据，而是通过数据库软件提供的接口来读写数据。关系数据库的关系模型是基于数学理论建立的。我们把域定义为一组具有相同数据类型的值的集合，给定一组域D1，D2，D3…Dn，它们的笛卡尔集定义为D1✖️D2…Dn。。。数据类型关系数据库支持的标准数据类型包括数值、字符串、时间等。SQLsql是结构化查询语言的缩写，用来访问和操作数据库系统">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513023315.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513024234.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513024234.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513025003.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513025051.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161159.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161230.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161305.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513162825.png">
+<meta property="article:published_time" content="2022-05-13T02:04:51.000Z">
+<meta property="article:modified_time" content="2022-09-21T20:44:54.883Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="后端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513023315.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-后端知识学习-sql" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/" class="article-date">
+  <time class="dt-published" datetime="2022-05-13T02:04:51.000Z" itemprop="datePublished">2022-05-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      后端知识学习-sql
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>数据库作为一种专门管理数据的软件而出现。应用程序不需要自己管理数据，而是通过数据库软件提供的接口来读写数据。<br>关系数据库的关系模型是基于数学理论建立的。我们把域定义为一组具有相同数据类型的值的集合，给定一组域D1，D2，D3…Dn，它们的笛卡尔集定义为D1✖️D2…Dn。。。<br><strong>数据类型</strong><br>关系数据库支持的标准数据类型包括数值、字符串、时间等。<br><strong>SQL</strong><br>sql是结构化查询语言的缩写，用来访问和操作数据库系统。<br>SQL定义了以下几种操作数据库等能力：</p>
+<ul>
+<li>DDL：data definition language，允许用户定义数据，也就是创建表、删除表、修改表结构；通常由数据库管理员执行。</li>
+<li>DML：data manipulation language，允许用户添加、删除、更新数据，是应用程序对数据库等日常操作。</li>
+<li>DQL：data query language，允许用户查询数据，是通常最频繁的数据库日常操作。<span id="more"></span>
+<strong>语法特点</strong><br>SQL的语言关键字不区分大小写。</li>
+</ul>
+<h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2><p>表的每一行称为记录（Record），记录逻辑意义上的一个数据。<br>表的每一列称为字段（column），同一个表的每一行记录拥有相同的columns。<br>字段定义了数据类型，以及是否允许为NULL。<br>同excel不同，关系数据库的表存在“一对多”，”多对一“，”一对一“的关系，需要按照应用程序的逻辑来组织和存储数据。</p>
+<h3 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h3><p>对于关系表，任意两条记录不能重复，即不能完全相同，能够通过某个字段唯一区分不同的记录，这个字段称为主键key。<br>对于主键的要求，记录一旦插入到表中，主键最好不要再修改。主键是用来唯一定位记录的。<br>选取主键的基本原则：不实用任何业务相关的字段作为主键。<br>一般主键使用完全业务无关的字段，一般命名为id。常见的可作id的字段类型有：</p>
+<ol>
+<li>自增整数类型</li>
+<li>全局唯一GUID类型：使用一种全局唯一的字符串作为主键<br><strong>联合主键</strong>：两个或更多的字段都设置为主键，这种主键称为联合主键。对于联合主键，允许一列有重复，只要不是所有主键列都重复即可。</li>
+</ol>
+<h3 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h3><p>为了表示一对多的关系，常常需要在表中定义外键，以关联另一张表。外键不是通过列名实现，而是通过定义外键约束实现。具体如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE students</span><br><span class="line">ADD CONSTRAINT fk_class_id</span><br><span class="line">FOREIGN KEY (class_id)</span><br><span class="line">REFERENCES classes(id);</span><br></pre></td></tr></table></figure>
+<p>其中，外键约束名称可以任意，foreign key指定了class_id作为外键，references key将这个外键关联到表classes上的id列（即classes表的主键id）。<br>由于外键会降低数据库的性能，大部分互联网应用程序为了追求速度，并不设置外键约束，而主要是通过应用程序自身来保证逻辑的正确性。这种情况下，class_id仅仅是一个普通列，只是它起到了外键的作用。</p>
+<h3 id="多对多"><a href="#多对多" class="headerlink" title="多对多"></a>多对多</h3><h3 id="一对一"><a href="#一对一" class="headerlink" title="一对一"></a>一对一</h3><h3 id="索引-index"><a href="#索引-index" class="headerlink" title="索引 index"></a>索引 index</h3><p>索引是数据库中对某一列或某几列的值进行预排序对数据结构。通过使用索引，可以让数据库不必扫描整个表，而是直接定位到符合条件的记录，大大加快查询速度。<br>创建索引：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE students</span><br><span class="line">ADD INDEX idx_score(score);</span><br></pre></td></tr></table></figure>
+<p>创建名称为idx_score的索引列。索引名称是任意的，索引如果有多列，可以在括号中依次写上，如下。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE students</span><br><span class="line">ADD INDEX idx_name_score (name, score);</span><br></pre></td></tr></table></figure>
+<h2 id="查询数据"><a href="#查询数据" class="headerlink" title="查询数据"></a>查询数据</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名；</span><br></pre></td></tr></table></figure>
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM 表名 WHERE 条件；</span><br></pre></td></tr></table></figure>
+<p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513023315.png" alt="常用条件表达式"></p>
+<h3 id="投影查询"><a href="#投影查询" class="headerlink" title="投影查询"></a>投影查询</h3><p>SELECT column1,column2,.. FROM …;   </p>
+<p>还可以对结果返回列进行重命名：</p>
+<p>SELECT column1 col1,column2 col2 FROM …</p>
+<h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>关键字 ORDER BY<br>可以进行正序和倒序，在最后加上DESC即为倒叙，默认ASC升序，同时可以分别进行排序<br>ORDER BY要放在 WHERE后面</p>
+<h3 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h3><p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513024234.png" alt="分页查询示例"></p>
+<h3 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h3><p>SQL提供了一系列内置函数，可以快速获得诸如总和、平均值、计次、最大值、最小值等结果。<br><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513024234.png" alt="SQL提供的聚合函数"><br><strong>分组聚合功能</strong><br>关键字GROUP BY</p>
+<h3 id="多表查询"><a href="#多表查询" class="headerlink" title="多表查询"></a>多表查询</h3><h3 id="连接查询"><a href="#连接查询" class="headerlink" title="连接查询"></a>连接查询</h3><p>连接查询是一种多表查询。连接查询对多个表进行join运算，简单来说，先确定一个主表作为结果集，然后把其他字表有选择性的“连接”在主表结果集上。<br><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513025003.png" alt="inner join连接"><br><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513025051.png" alt="不同连接方式的形象化理解"></p>
+<h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><p>关系数据库的基本操作就是增删改查，即CRUD： Create、Retrieve、Update、Delete。<br>对于增、删、改，对应的SQL语句分别是：</p>
+<ul>
+<li>INSERT：插入新纪录</li>
+<li>UPDATE：更新已有记录</li>
+<li>DELETE：删除已有记录</li>
+</ul>
+<h3 id="INSERT"><a href="#INSERT" class="headerlink" title="INSERT"></a>INSERT</h3><p>基本语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO 表名 (column1,column2,...) VALUES (value1,value2,...);</span><br></pre></td></tr></table></figure>
+<p><strong>一次性添加多条记录</strong><br>只需要在VALUES子句中指定多个记录值，每个记录值是由()包含的一组值</p>
+<h3 id="UPDATE"><a href="#UPDATE" class="headerlink" title="UPDATE"></a>UPDATE</h3><p>基本语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE &lt;table name&gt; SET column1=value1, column2=value2,... WHERE ...;</span><br></pre></td></tr></table></figure>
+<p>在update语句中，更新字段时可以使用表达式，例如 score&#x3D;score+10。<br>如果WHERE条件没有匹配到任何记录，UPDATE不会报错，也不会有任何记录被更新。<br>UPDATE语句可以没有WHERE条件，使用时要当心。</p>
+<h3 id="DELETE"><a href="#DELETE" class="headerlink" title="DELETE"></a>DELETE</h3><p>基本语法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM &lt;table name&gt; WHERE ...;</span><br></pre></td></tr></table></figure>
+<h2 id="其它实用SQL语句"><a href="#其它实用SQL语句" class="headerlink" title="其它实用SQL语句"></a>其它实用SQL语句</h2><h3 id="插入或替换"><a href="#插入或替换" class="headerlink" title="插入或替换"></a>插入或替换</h3><p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161159.png"></p>
+<h3 id="插入或更新"><a href="#插入或更新" class="headerlink" title="插入或更新"></a>插入或更新</h3><p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161230.png"></p>
+<h3 id="插入或忽略"><a href="#插入或忽略" class="headerlink" title="插入或忽略"></a>插入或忽略</h3><p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513161305.png"></p>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>在执行SQL语句的时候，某些业务要求，一些操作必须全部执行，而不能执行一部分，例如银行转账操作。如果有一条语句执行失败，则所有语句必须全部撤销。这种把多条语句作为一个整体进行操作的的功能，成为数据库的事务。如果事务失败，则效果和没有执行这些SQL语句一样，不会对数据库有任何改动。<br>数据库事务的ACID特性：</p>
+<ul>
+<li>A：atomics，原子性，所有SQL作为原子工作但愿，要么全部执行，要么全部不执行。</li>
+<li>C：consistent，一致性，事务完成后，所有数据状态是一致的，即A账户只要减去了100，B账户必定加上了100.</li>
+<li>I：isolation，隔离性，如果有多个事务并发执行，每个事务作出的修改必须与其他事务隔离。</li>
+<li>D：Duration，持久性，即事务完成后，对数据库数据的修改被持久化存储。<br>对于单条SQL语句，数据库系统自动将其作为一个事务进行执行，成为隐式事务。<br>手动将多条SQL语句作为一个事务执行，使用BEGIN开启一个事务，使用COMMIT提交一个事务，这种事务成为显示事务。eg<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BEGIN;</span><br><span class="line">UPDATE accounts SET balance = balance-100 WHERE id = 1;</span><br><span class="line">UPDATE accounts SET balance = balance + 100 WHERE id = 2;</span><br><span class="line">COMMIT;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="数据库隔离级别"><a href="#数据库隔离级别" class="headerlink" title="数据库隔离级别"></a>数据库隔离级别</h2><p><img src="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220513162825.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/" data-id="cl8c4lcz3000eg2k5708dhunf" data-title="后端知识学习-sql" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/09/21/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/12/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">工作流的一些想法</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag">工作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%9D%E8%80%83/" rel="tag">思考</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E/" rel="tag">经济</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BA%BB%E9%86%89/" rel="tag">麻醉</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 12px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 10px;">后端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">学习</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 12px;">工作</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px;">思考</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 10px;">生活</a> <a href="/tags/%E7%BB%8F%E6%B5%8E/" style="font-size: 12px;">经济</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 18px;">计算机</a> <a href="/tags/%E9%BA%BB%E9%86%89/" style="font-size: 16px;">麻醉</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/21/Azure%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/">Azure虚拟机的一些设置</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/21/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/">后端知识学习-sql</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">工作流的一些想法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/">前端学习笔记2-html</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>前端学习笔记2-html | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="下拉列表框  下拉列表框（也称为选择框）让用户在一个下拉列表中选择其中的一个选项。select元素用来创建列表框，包含两个或两个以上的option元素。name特性指定这个表单控件的名称。  option元素   option元素用来指定用户可以算则的选项。在起始标签和结束标签之间的文字将显示在下拉列表中。value特征用来指定选项的值，如果该选项被选中，那么这个值将与控件的名称一起发送到服务器中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端学习笔记2-html">
+<meta property="og:url" content="http://example.com/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="下拉列表框  下拉列表框（也称为选择框）让用户在一个下拉列表中选择其中的一个选项。select元素用来创建列表框，包含两个或两个以上的option元素。name特性指定这个表单控件的名称。  option元素   option元素用来指定用户可以算则的选项。在起始标签和结束标签之间的文字将显示在下拉列表中。value特征用来指定选项的值，如果该选项被选中，那么这个值将与控件的名称一起发送到服务器中">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220512022024.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220512022502.png">
+<meta property="article:published_time" content="2022-05-12T02:00:13.000Z">
+<meta property="article:modified_time" content="2022-09-21T20:44:54.879Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220512022024.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-前端学习笔记2-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/" class="article-date">
+  <time class="dt-published" datetime="2022-05-12T02:00:13.000Z" itemprop="datePublished">2022-05-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      前端学习笔记2-html
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3>下拉列表框</h3>
+
+<p>下拉列表框（也称为选择框）让用户在一个下拉列表中选择其中的一个选项。select元素用来创建列表框，包含两个或两个以上的option元素。name特性指定这个表单控件的名称。</p>
+
+<h4>option元素</h4>
+
+<p> option元素用来指定用户可以算则的选项。在起始标签和结束标签之间的文字将显示在下拉列表中。value特征用来指定选项的值，如果该选项被选中，那么这个值将与控件的名称一起发送到服务器中。</p>
+<span id="more"></span>
+<h4>selected</h4>
+
+<p>同之前selected特性类似</p>
+
+<h3>文件上传域</h3>
+<p>如果希望用户上传文件，如图像、视频、mp3等，就需要用到文件域。input元素的type值为file。</p>
+<strong>文件上传示例</strong>
+<form action='http://lifeyao.top/upload.py' method='post'>
+<p>upload your song in MP3 format:</p>
+<input type='file' name='user-song'/><br/>
+<input type='submit' value='upload'/>
+</form>
+<h3>提交按钮</h3>
+<p>input元素的type为submit，可以不包括name特性，value特征用来控制用于显示在按钮上的文本。
+<h3>图像按钮</h3>
+<p>input元素的type值为image</p>
+<h3>button</h3>
+<p>
+引入button元素的目的是让用户更好地控制按钮的显示方式，并且允许其他元素出现在button元素内。这意味着你可以在之间结合使用文本和图像。
+</p>
+<h3>label</h3>
+<img src='https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220512022024.png'>
+<h3> for</h3>
+<img src='https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220512022502.png'>
+<br/><br/>
+<strong>示例</strong>
+<form action='http://lifeyao.top/upload.py' method='get'>
+    <fieldset>
+        <legend>
+        Your Details:
+        </legend>
+        <label>
+        Name:
+        <input type='text' name='name' size='30' maxlength='100'>
+        </label>
+        <br/>
+        <label>	
+            Email:
+        <input type='email' name='email' size='30' maxlength='100'>
+        </label>
+        <br/>
+        </fieldset>
+        <br/>
+        <fieldset>
+        <legend>
+        Your Review:
+        </legend>
+        <p>
+            <label for='hear-about'>
+            How dii you hear about us?
+            </label>
+            <select name='referrer' id='hear-about'>
+                <option value='google'>Google</option>
+                <option value='friend'>Friend</option>
+                <option value='advert'>Advert</option>
+                <option value='other'>Other</option>
+            </select>
+        </p>
+        <p>
+            Would you visit again?
+        <br/>
+        <label>
+            <input type='radio' name='rating' value='yes' />
+            Yes
+        </label>
+        <label>
+            <input type='radio' name='rating' vaule='no' />
+            No
+        </label>
+        <label>
+            <input type='radio' name='rating' value='maybe'>
+            Maybe
+        </label>
+        </p>
+        <p>
+        <label for='comments'>
+            Comments:
+        </label>
+        <br/>
+        <textarea rows='4' cols='40' id='comments'>
+        </textarea>
+        </p>
+        <label>
+            <input type='checkbox' name='subscribe' checked='checked' />
+            Sign me up for email updates
+        </label>
+        <br/>
+        <input type='submit' value='Submit review' />
+        </fieldset>
+    </form>
+<h2>其他标记</h2>
+<ul>
+<li> 指定不同的HTML版本</li>
+<li> 元素的标识和分组</li>
+<li> 注释、meta信息和内联框架</li>
+<h2>音视频的添加</h2>
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/" data-id="cl8c4lcz2000dg2k5ezuqfe9j" data-title="前端学习笔记2-html" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/05/12/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          工作流的一些想法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-html/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前端学习笔记-html</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag">工作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%9D%E8%80%83/" rel="tag">思考</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E/" rel="tag">经济</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BA%BB%E9%86%89/" rel="tag">麻醉</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 12px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 10px;">后端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">学习</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 12px;">工作</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px;">思考</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 10px;">生活</a> <a href="/tags/%E7%BB%8F%E6%B5%8E/" style="font-size: 12px;">经济</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 18px;">计算机</a> <a href="/tags/%E9%BA%BB%E9%86%89/" style="font-size: 16px;">麻醉</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/21/Azure%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/">Azure虚拟机的一些设置</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/21/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/">后端知识学习-sql</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">工作流的一些想法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/">前端学习笔记2-html</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

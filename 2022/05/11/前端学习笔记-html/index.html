@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>前端学习笔记-html | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="编写超级链接 1&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.baidu.com&quot;&gt;BaiDu百度&lt;&#x2F;a&gt;  如果链接指向其他网站，Href中的内容必须为绝对url（uniform resource locator)指向同一网站中其他页面的链接，可以使用相对url  相对url:类似于unix的文件组织形式链接到当前页面的特定位置 在链接到页面的特定位置之前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端学习笔记-html">
+<meta property="og:url" content="http://example.com/2022/05/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-html/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="编写超级链接 1&lt;a href&#x3D;&quot;https:&#x2F;&#x2F;www.baidu.com&quot;&gt;BaiDu百度&lt;&#x2F;a&gt;  如果链接指向其他网站，Href中的内容必须为绝对url（uniform resource locator)指向同一网站中其他页面的链接，可以使用相对url  相对url:类似于unix的文件组织形式链接到当前页面的特定位置 在链接到页面的特定位置之前">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220511160206.png">
+<meta property="og:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/%E6%88%AA%E5%B1%8F2022-05-11%2017.15.51.png">
+<meta property="article:published_time" content="2022-05-11T12:47:06.000Z">
+<meta property="article:modified_time" content="2022-09-21T20:44:54.879Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="计算机">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="前端">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220511160206.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-前端学习笔记-html" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-html/" class="article-date">
+  <time class="dt-published" datetime="2022-05-11T12:47:06.000Z" itemprop="datePublished">2022-05-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      前端学习笔记-html
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3>编写超级链接</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://www.baidu.com&quot;&gt;BaiDu百度&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>如果链接指向其他网站，Href中的内容必须为绝对url（uniform resource locator)<br>指向同一网站中其他页面的链接，可以使用相对url</p>
+<ul>
+<li>相对url:类似于unix的文件组织形式<h4>链接到当前页面的特定位置</h4>
+在链接到页面的特定位置之前，需要确定链接所要到达的目标位置。确定目标位置时，需要使用id特性（一个可以应用在所有HTML元素的特性）。id特性的至必须以字母或者下划线开头，并且在同一个页面中不允许出现两个相同的id特征值。
+要链接到一个使用了id特性的元素，还需要使用<a>元素，不同的是他的href特征值以#开头，后面跟着要链接元素的id特征值。<span id="more"></span>
+<h2> 图像</h2>
+<p>在网站上存储图像，一般将图像存储在一个单独的文件夹中。在一个大型网站中，倾向于在images文件夹中添加子文件夹，例如，徽标和按钮的图像可能存储在一个名为interface的文件夹中，产品照片可能存储在一个名为products的文件夹中，与新闻相关的图像则可能存在一个名为news的文件夹中。
+<img>元素，必须包含两个特性，分别是src特性和alt特性，src一般是指向网站内某个图像的相对url。alt特性对图像进行文本说明，在无法查看图像上时说明图像。图像的宽度和高度由height和width两个特性来指定。
+创建图像的三条规则：1、使用正确的格式保存图像；2、以正确的大小保存图像；3、以像素来衡量图像。
+HTML5的图形和图形说明：图像往往带有说明,HTML5引入figure元素用来包含图像以及对图像的说明。</p>
+<h2>第六章</h2>
+<p>在HTML中，表格按照行的顺序逐行编写<br />
+table元素创建表格，tr标签表示每行的开始，tr代表的是table row。每个单元格元素用td进行表示，td表示table data。
+th作用是表示列或者行的标题.<br />
+<img src='https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/20220511160206.png' alt='表格示例'>
+Th元素可以使用scope特性来表示此元素是列标题还是行标题，row表示为行标题，col表示为列标题。</p>
+<strong>示例 表格</strong>
+<table>
+  <thead>
+      <tr>
+      <th></th>
+      <th scope='col'>Home starter hosting</th>
+      <th scope='col'>Premium business hosting</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <th scope='row'>Disk space</th>
+      <td>250mb</td>
+      <td>1gb</td>
+      </td>
+      <tr>
+      <th scope='row'>Bandwidth</th>
+      <td>6gb per month</td>
+      <td>50gb per month</td>
+      </tr>
+      <!-- more rows like the two above here -->
+  </tbody>
+  <tfoot>
+      <tr>
+      <td></td>
+      <td colspan='2'>sign up now and save 10%!</td>
+      </tr>
+  </tfoot>
+</table>
+<h2>表单</h2>
+<p>
+表单指一个打印的文档，这个文档中含有一些空白区域填写信息。可以使用多种类型的表单控件为网站收集来自访问者的信息。包括添加文本、进行选择、提交表单。
+</p>
+<h3>表单如何工作</h3>
+<p>用户填写表单，然后点击一个按钮将所填信息提交到服务器。服务器利用某种编辑语言对这些信息进行处理，还可能将这些信息存储在一个数据库中。<br/>一个表单可能又多个表单控件，每种控件收集不同的信息，服务器需要知道用户输入的每一条数据输入了哪一个表单元素。</p>
+<h3>表单的结构</h3>
+<p>表单控件位于form元素中，每个form元素都应该设置action特性，通常还要设置method特性和id特性</p>
+<p>action:每个action的特征值是服务器上一个页面的URL，这个页面用来在用户提交表单时接受不了表单中的信息。</p>
+<p>method：表单的提交可以采用以下两种方法之一：get或post。<br/>使用get方法时，表单中的值被附加在action所指定的URL末尾中。get适用于：短表单、只从WEB服务器上检索数据的情形。<br/>使用post方法时，表单中的值被放在HTTP头信息中发送。从经验上来说，如果表单中存在以下情况，应该使用post方法。<ul><li>允许用户上传文件</li><li>非常长</li><li>包含敏感信息（例如密码等）</li><li>向数据库中添加信息，或从数据库中删除信息</li></ul><br/>如果没有method特性，数据将采用get方法发送</p>
+<p>id特征，用来在页面上的众多元素中对表单进行唯一性的表示</p>
+<h3>单行文本框</h3>
+<p>Input元素用来创建多种不同的表单控件，其type特征的值决定控件类型。
+type='text',当type特征值为text时，input会创建一个单行文本框。name：当用户向表单中输入信息时，服务器需要知道每条数据被输入到哪个表单控件。这个特征的值对表单控件进行表示并与输入的信息一同送到服务器。size特征不能在新表单中使用，只在旧的表单中用来指定文本框的宽度。size特征值为3的input元素创建的文本框宽度只能显示3个字符（尽管用户可以输入更多字符）。在编写所有新表单都应该使用CSS来控制表单元素的宽度，这里size仅供参考。maxlength特征限制用户在文本区域输入字符的数量，它的值为用户可以输入字符的最大数量。</p>
+<h3>密码框</h3>
+<p>
+同单行文本框类似，不过type为password，用户输入时隐藏输入信息</p>
+<h3>文本域（多行文本框》</h3><p>
+Textarea元素用来创建多行文本框，与input元素不同，textarea元素非空元素，因此包含起始标签与结束标签。</p>
+<img src='https://picpool-yy.oss-cn-hangzhou.aliyuncs.com/img/截屏2022-05-11 17.15.51.png' alt='textarea.html'>
+<h3>单选按钮</h3><p>
+Input元素，type值为radio。checked特性可用来指定当页面加载时哪个值会被选中。这个特征的值为checked，同一组中的单选按钮只能有一个使用此特性。</p></li>
+</ul>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><ul>
+<li>块引用：如果一个块级内容（一个段落、多个段落、一个列表等）从其它地方被引用，可使用blockquote元素包裹起来展示，并且在其中的cite属性里用URL来指向引用的资源。</li>
+<li>行内引用：使用q元素，其他同块引用。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/11/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-html/" data-id="cl8c4lcz0000ag2k557w72jnu" data-title="前端学习笔记-html" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          前端学习笔记2-html
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/10/%E9%87%8F%E8%A1%A8%E7%94%B5%E5%AD%90%E5%8C%96%E9%A1%B9%E7%9B%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">量表电子化项目</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag">工作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%9D%E8%80%83/" rel="tag">思考</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E6%B5%8E/" rel="tag">经济</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag">计算机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%BA%BB%E9%86%89/" rel="tag">麻醉</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 12px;">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 10px;">后端</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;">学习</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 12px;">工作</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px;">思考</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 10px;">生活</a> <a href="/tags/%E7%BB%8F%E6%B5%8E/" style="font-size: 12px;">经济</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 18px;">计算机</a> <a href="/tags/%E9%BA%BB%E9%86%89/" style="font-size: 16px;">麻醉</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">May 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/09/21/Azure%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%BE%E7%BD%AE/">Azure虚拟机的一些设置</a>
+          </li>
+        
+          <li>
+            <a href="/2022/09/21/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/13/%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0-sql/">后端知识学习-sql</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/">工作流的一些想法</a>
+          </li>
+        
+          <li>
+            <a href="/2022/05/12/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02-html/">前端学习笔记2-html</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
